@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .menu {
+        display: flex;
+    }
+    
+    .menu .menu-item {
+        padding: 10px;
+        list-style: none;
+        /* border: 1px solid red; */
+    }
+    /* .menu-item a:hover .submenu{
+
+    } */
+    
+    .menu-item .submenu {
+        display: none;
+    }
+    
+    .menu-item:hover .submenu {
+        display: block;
+        /* position: absolute; */
+        /* border: 2px solid green; */
+    }
+</style>
+
+<body>
+    <ul class="menu level-0">
+        <li class="menu-item">
+            <a href="#">Destination</a>
+            <ul class="submenu level-1">
+                <li class="submenu-item">Indonesia </li>
+                <li class="submenu-item">India</li>
+                <li class="submenu-item">Hong Kong</li>
+                <li class="submenu-item">Italy</li>
+            </ul>
+        </li>
+        <li class="menu-item">
+            <a href="#">Hotels</a>
+            <ul class="submenu level-1">
+                <li class="submenu-item">Sheraton</li>
+                <li class="submenu-item">Four Square</li>
+                <li class="submenu-item">Taj</li>
+                <li class="submenu-item">Sun and Sand</li>
+            </ul>
+        </li>
+    </ul>
+
+    <ul class="submenu level-1">
+        <li class="submenu-item">Submenu item</li>
+        <li class="submenu-item">Submenu item</li>
+        <li class="submenu-item">Submenu item</li>
+        <li class="submenu-item">Submenu item</li>
+    </ul>
+</body>
+
+</html>

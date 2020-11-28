@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown List</title>
+</head>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    .menu {
+        display: flex;
+    }
+    
+    .dropdown {}
+    
+    .filemenu {
+        margin: 10px;
+        padding: 10px;
+        font-size: 20px;
+        background-color: lightgray;
+        color: black;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    .submenu {
+        width: 160px;
+        background-color: lightgray;
+        padding: 10px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        /* width: 200px; */
+    }
+    
+    .dropdown .submenu {
+        display: none;
+    }
+    
+    .dropdown:hover .submenu {
+        display: block;
+    }
+</style>
+
+<body>
+
+    <ul class="menu">
+        <li class="dropdown">
+            <a href="#" class="filemenu">File</a>
+            <ul class="submenu">
+                <li class="item">New File</li>
+                <li class="item">New Folder</li>
+                <li class="item">Save</li>
+                <li class="item">Save As</li>
+                <li class="item">Exit</li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="filemenu">Edit</a>
+            <ul class="submenu">
+                <li class="item">Undo</li>
+                <li class="item">Redo</li>
+                <li class="item">Cut</li>
+                <li class="item">Copy</li>
+                <li class="item">Paste</li>
+            </ul>
+        </li>
+
+        <li class="dropdown">
+            <a href="#" class="filemenu">View</a>
+            <ul class="submenu">
+                <li class="item">Open View</li>
+                <li class="item">Search</li>
+                <li class="item">Compile</li>
+                <li class="item">Run</li>
+                <li class="item">Terminal</li>
+            </ul>
+        </li>
+    </ul>
+
+</body>
+
+</html>
